@@ -10,8 +10,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "apexcharts": "^3.24.0",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
     "vue": "^2.6.11",
+    "vue-apexcharts": "^1.6.0",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
@@ -36,12 +43,18 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/airbnb"
+      "plugin:vue/recommended",
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+      "semi": [
+        1,
+        "never"
+      ]
+    },
     "overrides": [
       {
         "files": [

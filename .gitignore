@@ -7,7 +7,7 @@ node_modules
 
 
 # local env files
-.env.local
+.env
 .env.*.local
 
 # Log files
@@ -24,3 +24,5 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
